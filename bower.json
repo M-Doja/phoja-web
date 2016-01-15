@@ -15,6 +15,15 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "angular": "~1.4.7",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "modernizr": "latest",
+    "waitForImages": "latest",
+    "javascript-detect-element-resize": "latest"
+  },      
+  "devDependencies": {
+    "qunit": "~1.12.0",
+    "jquery": "~1.9",
+    "modernizr": "latest",
+    "waitForImages": "latest"
   }
 }
