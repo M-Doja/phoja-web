@@ -49,12 +49,29 @@ body, html {
 .fontLob {
   font-family:Lobster;
 }
+#aboutSection .top {
+  text-align:justify;
+  padding-left:70px;
+  padding-right:70px;
+  margin-top:px;"
+}
+#select  {
+  width: 200px;
+  border-radius: 10%;
+  background-color: lightgrey;
+  color:black;
+  font-family: Bree serif;
+  text-align: center;
+  padding-left: 70px;
+  font-size: 1.25em
+}
 @media (max-width: 960px) {
   #nav p     { display: none; }
   #nav select { display: inline-block; }
 }
 @media only screen and (max-width: 500px) {
-    #banner {
-        background-color:lightblue;
+    #aboutSection .top {
+        padding-left:20px;
+        padding-right:20px
     }
 }
