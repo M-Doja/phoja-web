@@ -5,8 +5,10 @@ body, html {
 #title {
   text-align: center;
 }
-#container {
-
+hr {
+  background-color:rgba(255,255,255,0.2);
+  height:1px;
+  max-width:970px;
 }
 #nav li {
   text-align: center;
@@ -46,6 +48,17 @@ body, html {
   margin-bottom:40px;
   margin-top:20px;
 }
+#runner {
+  font-size:2em;
+  margin: auto;
+  height: 45px;
+  max-width: 1000px;
+  background-color: rgba(255,25,25,0.7);
+  color:white;
+  text-align: center;
+  margin-bottom:40px;
+  margin-top:20px;
+}
 .fontLob {
   font-family:Lobster;
 }
@@ -54,6 +67,15 @@ body, html {
   padding-left:70px;
   padding-right:70px;
   margin-top:px;"
+}
+#adView {
+  color:red;
+  font-size:6em;
+  margin-top:-335px;
+  margin-bottom: 200px;
+}
+#picBack {
+  background-color: white;
 }
 #select  {
   width: 200px;
@@ -68,10 +90,22 @@ body, html {
 @media (max-width: 960px) {
   #nav p     { display: none; }
   #nav select { display: inline-block; }
+
+}
+@media (min-width: 960px) {
+  #runner {
+    height: 55px;
+  }
 }
 @media only screen and (max-width: 500px) {
     #aboutSection .top {
         padding-left:20px;
         padding-right:20px
     }
+    #adView {
+      font-size: 3em;
+      margin-top:-120px;
+      margin-bottom: 50px;
+    }
+
 }

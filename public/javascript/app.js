@@ -16,6 +16,11 @@ angular.module('Phoja', ['ui.router']).config(function($stateProvider, $urlRoute
     templateUrl: '/templates/Landing.html',
     controller: 'MainController',
     controllerAs: "vm"
+  }).state('Advisory', {
+    url: "/advisory",
+    templateUrl: '/templates/Advisory.html',
+    controller: 'MainController',
+    controllerAs: "vm"
   }).state('Craft', {
     url: "/craft",
     templateUrl: '/templates/Craft.html',
