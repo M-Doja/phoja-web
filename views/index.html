@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app='Phoja'>
+<head>
+	<title>Phoja Unlimited LLC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body id="container">
+
+
+    <div class="row" flex id='nav' style="margin-bottom:px;">
+			<div class="col-md-3">
+        <p><a ui-sref='Landing'>Home</a></p>
+      </div>
+			<div class="col-md-3">
+        <p><a ui-sref='Craft'> Advisory</a></p>
+      </div>
+      <!-- <div class="col-md-3">
+        <p><a ui-sref='Craft'>Arts & Music</a></p> -->
+
+				<div class="dropdown col-md-3">
+							  <a class=" dropdown-toggle" data-toggle="dropdown" style="text-decoration:;"><p>Arts & Music
+							  <span class="caret"></span></p></a>
+							  <ul class="dropdown-menu">
+							    <li><a ui-sref='Craft'>Custom Craft</a></li>
+							    <li><a ui-sref='Music'>Music Production</a></li>
+							  </ul>
+							</div>
+      <!-- </div> -->
+      <!-- <div class="col-md-2">
+        <p><a ui-sref='Music'>Music</a></p>
+      </div> -->
+      <div class="col-md-3">
+        <p><a ui-sref='Websites'>Web-Dev</a></p>
+      </div>
+			<!-- <div class="col-md-2">
+        <p><a ui-sref='Craft'>About PU</a></p>
+      </div> -->
+    </div>
+
+
+
+
+	<ui-view></ui-view>
+
+		<!-- Libs -->
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/angular/angular.js"></script>
+	<script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- modules -->
+	<script src="/javascript/app.js"></script>
+	<!-- services/factories -->
+	<!-- cotrollers -->
+	<script src="/javascript/controller/MainController.js"></script>
+	<!-- <script src="/javascript/controller/AddBlogController.js"></script> -->
+</body>
+</html>

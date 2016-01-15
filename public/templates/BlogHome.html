@@ -1,0 +1,16 @@
+<h1>The Blogging Station</h1>
+<div ng-controller='MainBlogController as vm'>
+  <div style="text-align:center">
+    <button type="button" class="btn btn-success" ui-sref='AddBlog'>Create a new blog</button>
+  </div>
+
+    <div ng-repeat="newBlog in vm.blogs">
+      <div class="well container">
+        <h3>Title: {{newBlog.title}}</h3>
+        <p>{{newBlog.body}}</p>
+        <p>{{vm.date | date:'yyyy-MM-dd HH:mm'}}</p>
+        <h4>Written by: {{newBlog.author}}</h4>
+        <button type="button" class="btn btn-danger" ng-click='vm.deleteBlog(newBlog)'>Delete</button>
+      </div>
+  </div>
+</div>	<!-- End of MainController -->

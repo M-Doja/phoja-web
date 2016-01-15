@@ -1,0 +1,44 @@
+#title {
+  text-align: center;
+}
+#container {
+
+}
+#nav li {
+  text-align: center;
+  float: center;
+  text-decoration: none;
+}
+#nav {
+  height:auto;
+  padding:10px;
+  background-color:black;
+  color:white;
+  text-align: center;
+
+}
+#nav p {
+  font-size: 1.5em;
+  font-family:Bree serif;
+}
+
+#nav.fixed {
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index:999;
+}
+#banner {
+  margin: auto;
+  height: 300px;
+  max-width: 100%;
+  background-color: rgba(255,25,25,0.7);
+  color:white;
+  text-align: center;
+  margin-bottom:40px;
+  margin-top:20px;
+}
+.fontLob {
+  font-family:Lobster;
+}
