@@ -90,6 +90,18 @@ hr {
   padding-left: 70px;
   font-size: 1.25em
 }
+#fb-link {
+  float:right;
+  margin-top:-60px;
+  margin-bottom:20px;
+}
+@media (max-width: 760px) {
+  #fb-link {
+    margin-top: 0px;
+    float: none;
+  }
+}
+
 @media (max-width: 960px) {
   #nav p     { display: none; }
   #nav select { display: inline-block; }
@@ -111,7 +123,6 @@ hr {
       margin-top:-120px;
       margin-bottom: 50px;
     }
-
     #runner {
       height: 50px;
       margin-top:0px;
@@ -119,6 +130,7 @@ hr {
 }
 @media only screen and (max-width: 900px) {
   #pic  { display: none;}
+
 }
 @media screen and (min-width: 0px) and (max-width: 400px) {
   .artLines { display: block;margin: 0px 10px; }  /* show it on small screens */
