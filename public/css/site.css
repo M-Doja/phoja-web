@@ -1,3 +1,7 @@
+body, html {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 #title {
   text-align: center;
 }
@@ -16,6 +20,9 @@
   color:white;
   text-align: center;
 
+}
+#nav select {
+  display: none;
 }
 #nav p {
   font-size: 1.5em;
@@ -41,4 +48,13 @@
 }
 .fontLob {
   font-family:Lobster;
+}
+@media (max-width: 960px) {
+  #nav p     { display: none; }
+  #nav select { display: inline-block; }
+}
+@media only screen and (max-width: 500px) {
+    #banner {
+        background-color:lightblue;
+    }
 }
