@@ -1,20 +1,21 @@
 <div class="container-fluid">
 	<div class="row">
-    <div class="col-md-12" style='background-color: rgba(255,25,25,0.7);max-width: ;' >
+    <div class="col-md-12" style='background-color: rgba(255,25,25,0.7);margin-top:20px;' >
       <!-- <h1 class="fontLob" style="font-size:5em;padding:9%;">Phoja Unlimited LLC</h1> -->
       <img src="/img/Music-Banner1.jpg" style="padding-top:5.5px;padding-bottom:5.5px;"class='img img-responsive' alt="" />
 		</div>
 	</div>
 	<div class="row" style="margin-top:100px;">
-		<div class="col-md-6" >
-      <img class='img img-responsive' width="300" height="200"src="img/bombay.jpg" alt="" />
-		</div>
-		<div class="col-md-6" style="margin-top:-50px;" >
-      <h2>Mic Doja</h2>
-      <img src="/img/FBicon.png" width="45" alt="" />
+		<div class="col-md-6" id='bombay' >
+			<img src="/img/FBicon.png" width="45" alt="" />
       <img src="/img/SCicon.png" width="50" alt="" />
       <img src="/img/TWicon.png" width="40" alt="" />
-      <p style="text-align:justify;padding-left:20px;padding-right:20px;margin-top:20px;">
+      <img class='img img-responsive' width="300" height="200"src="img/bombay.jpg" alt="" />
+		</div>
+		<div class="col-md-6" style="margin-top:-30px;margin-bottom:0px" >
+      <h2 style="text-align:center;">Music Production</h2>
+
+      <p id='prodText' style="text-align:justify;padding-left:20px;padding-right:20px;">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		</div>
 	</div>
@@ -22,7 +23,7 @@
   <div class="row">
   	<div class="wrapper">
       <div class="col-md-4">
-        <h4 style="margin-top:40px;margin-bottom:20px;">About Mic Doja</h4>
+        <h4 id="aboutHeader"style="margin-top:40px;margin-bottom:20px;">About Mic Doja</h4>
         <div class="div-wrap" style="background-color:rgba(255,255,255,0.1);height:300px;max-width:300px;">
 
           <!-- PRO PIC -->
@@ -42,7 +43,7 @@
             <p style="color:white;"><b>Website:</b> <a href='#'>MICDOJA.COM</a></p>
           </div>
         </div>
-        <hr  style="margin-top:450px;"class="artLines">
+        <!-- <hr  style="margin-top:450px;"class="artLines"> -->
         <hr class="artLines">
   		</div>
     </div>
@@ -50,6 +51,7 @@
     <!-- SOUND CLOUD -->
 		<div class="col-md-4" id="soundCloud">
       <h4 style="margin-top:40px;margin-bottom:20px;"><a href="#" style="text-decoration:none;">Mic Doja SoundCloud</a></h4>
+
       <iframe width="100%"  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169759759&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       <h5 style="padding-bottom:15px;">Mic Doja - I Get Down (King Version) Ft. F.I.R.E. & Link D</h5><hr>
 
@@ -63,11 +65,13 @@
     <!-- YOUTUBE -->
     <div class="col-md-4 ">
       <h4 style="margin-top:40px;margin-bottom:-38px;"><a href="#" style="text-decoration:none;">Mic Doja YouTube Channels</a></h4>
-      <iframe class="iframe" style='margin-top: 60px;margin-bottom:39px;' src="https://www.youtube.com/embed/LQWriOmZIxQ" frameborder="0" allowfullscreen></iframe>
 
-      <iframe class="iframe" style="margin-bottom:0px;"src="https://www.youtube.com/embed/pKurivCWYn8" frameborder="0" allowfullscreen></iframe>
+      <iframe class="iframe" id='wanna'  src="https://www.youtube.com/embed/LQWriOmZIxQ" frameborder="0" allowfullscreen></iframe>
 
-      <iframe class="iframe" style="margin-top:80px;" src="https://www.youtube.com/embed/no5D8b4763E" frameborder="0" allowfullscreen></iframe>
+
+      <iframe class="iframe" id='bounce' src="https://www.youtube.com/embed/pKurivCWYn8" frameborder="0" allowfullscreen></iframe>
+
+      <iframe class="iframe" id='wanna'  src="https://www.youtube.com/embed/no5D8b4763E" frameborder="0" allowfullscreen></iframe>
     </div>
 	</div>
 

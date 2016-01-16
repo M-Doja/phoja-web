@@ -100,39 +100,80 @@ hr {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
-@media (max-width: 980px) {
-  .bio-wrap { background-color: red;margin-bottom: 100px;}
-  #soundCloud { margin-top: 1000px;}
+#bounce {
+  margin-top: 95px;
+  margin-bottom: 25px;
 }
+#bombay img{
+  padding-top: 5px;
+}
+#prodText{
+  margin-top: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+@media (max-width: 980px) {
+  .bio-wrap { background-color: red;margin-bottom: 150px;}
+  #soundCloud { padding-top: 450px;}
+  #bombay { margin-top: -80px; padding-bottom: 40px;}
+}
+@media (max-width: 200px) {
+  /*#soundCloud { margin-bottom: 1500px;}*/
+  .bio-wrap {margin-bottom: -555px;}
+}
+
+
+
+/*LARGER TABLET VIEW WIDTHS*/
+@media (max-width: 990px) {
+  #soundCloud { padding-top: 280px;margin-top: 180px;}
+}
+
+/*TABLET VIEW WIDTHS*/
+@media (max-width: 750px) {
+  #soundCloud { padding-top: 10px;margin-top: 180px;}
+  .bio-wrap {display: none;}
+  #aboutHeader { display: none; }
+  .iframe { margin-top: 100px; }
+  #fb-link { margin-top: 0px;float: none; }
+}
+
+/*PHONE VIEW WIDTHS*/
+@media (max-width: 350px) {
+  #soundCloud { padding-top: 0px;}
+  #wanna { margin-bottom: -40px;}
+  #bounce { margin-bottom: -40px;}
+  .iframe { width: 250px;}
+  #fb-link { padding-top: 60px;margin-right: 50px;}
+}
+
+
+@media (max-width: 1000px) {
+  #nav p     { display: none; }
+  #nav select { display: inline-block; }
+}
+
+
+
+/*when mobile lower top margin*/
+@media (max-width: 960px) {
+
+}
+
+
 #fb-link {
   float:right;
   margin-top:-60px;
   margin-bottom:20px;
 }
-@media (max-width: 760px) {
-  #fb-link {
-    margin-top: 0px;
-    float: none;
-  }
-}
+
 #mePic {
   margin-bottom: 40px;
 }
-@media (max-width: 360px) {
-  .iframe { width: 260px; }
-}
 
-/*when mobile lower top margin*/
-@media (max-width: 960px) {
-  #soundCloud { margin-top: 180px;}
-  .iframe { margin-top: 100px; }
-}
 
-@media (max-width: 980px) {
-  #nav p     { display: none; }
-  #nav select { display: inline-block; }
 
-}
+
 @media (min-width: 960px) {
   #runner {
     height: 55px;
