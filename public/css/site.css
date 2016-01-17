@@ -59,6 +59,13 @@ hr {
   margin-bottom:40px;
   margin-top:20px;
 }
+#runner h1 {
+ margin-top: 5px;
+}
+.homeBanner {
+  font-size:5em;
+  padding:9%;
+}
 .fontLob {
   font-family:Lobster;
 }
@@ -81,8 +88,7 @@ hr {
   display: none;
 }
 .iframe {
-  margin-top: 60px;
-
+  /*margin-top: 60px;*/
 }
 
 #select  {
@@ -95,14 +101,21 @@ hr {
   padding-left: 70px;
   font-size: 1.25em
 }
+
+
+
+/* MUSIC PAGE*/
 .bio-wrap {
   margin-top: -15px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
-#bounce {
-  margin-top: 95px;
-  margin-bottom: 25px;
+#bounce, #wanna {
+  margin-top: 0px;
+}
+
+#youTube {
+  margin-top: 30px;
 }
 #bombay img{
   padding-top: 5px;
@@ -112,11 +125,91 @@ hr {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-@media (max-width: 980px) {
-  .bio-wrap { background-color: red;margin-bottom: 150px;}
-  #soundCloud { padding-top: 450px;}
-  #bombay { margin-top: -80px; padding-bottom: 40px;}
+#.scTitle {
+  padding-bottom:15px;
 }
+#down {
+  margin-bottom: -3px;
+}
+#faith {
+  margin-bottom: 35px;
+}
+#buyLinks {
+  color:white;
+  font-family: Bree serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 100px;
+}
+#buyLinks span {
+  margin-left: 20px;
+}
+#itunes {
+  margin-left: 225px;
+  margin-top:20px;
+}
+#amazon {
+  margin-left: 425px;
+  margin-top: -55px;
+}
+#cdbaby {
+  margin-left: 620px;
+  margin-top: -55px;
+}
+
+
+
+/*Website Page*/
+#webBan {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.card {
+  background-color:rgba(255, 255, 255, 0.5);
+  height: 150px;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card-content {
+  background-color:rgba(7, 6, 255, 0.5);
+  height: 100px;
+  width: 130px;
+}
+.card-footer {
+  background-color:rgba(97, 6, 25, 0.5);
+  height: 30px;
+  width: 130px;
+  text-align: center;
+  margin-top: -10px;
+}
+.card-footer h4 {
+  margin:0px;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+.card-body {
+  margin-left: 140px;
+  margin-top: -105px;
+}
+#travstate {
+  margin-top: 0px;
+}
+#portfolioPic {
+  margin-top: 40px;
+}
+#coderPicLow, #portfolioPicLow, #travstatePicLow {
+  display: none;
+}
+
+/**/
+
+
+
+
+/* MOBILE VIEWS */
+
 @media (max-width: 200px) {
   /*#soundCloud { margin-bottom: 1500px;}*/
   .bio-wrap {margin-bottom: -555px;}
@@ -126,25 +219,51 @@ hr {
 
 /*LARGER TABLET VIEW WIDTHS*/
 @media (max-width: 990px) {
+  .bio-wrap { background-color: red;margin-bottom: 150px;}
   #soundCloud { padding-top: 280px;margin-top: 180px;}
+  #bombay { margin-top: -80px; padding-bottom: 40px;}
 }
 
 /*TABLET VIEW WIDTHS*/
 @media (max-width: 750px) {
-  #soundCloud { padding-top: 10px;margin-top: 180px;}
-  .bio-wrap {display: none;}
-  #aboutHeader { display: none; }
   .iframe { margin-top: 100px; }
-  #fb-link { margin-top: 0px;float: none; }
+  .bio-wrap { display: none; }
+  #soundCloud { padding-top: 10px;margin-top: 180px; }
+  #aboutHeader { display: none; }
+  #fb-link { padding-top: 60px;margin-right: 50px; }
 }
-
-/*PHONE VIEW WIDTHS*/
+/*PHONE VIEW WIDTHS FOR PROJECTS*/
+@media (max-width: 450px) {
+  .card { width: 250px;height: auto; }
+  .card-body { display: none; }
+  #portfolioPic, #travstatePic, #coderPic { margin-top: 140px;margin-left:px; }
+  #coderPicLow, #portfolioPicLow, #travstatePicLow { display: inherit;margin-top: 20px; }
+  .card-footer  { margin-left:15px;width: 200px;}
+}
+/*PHONE VIEW WIDTHS EVERYTHING*/
 @media (max-width: 350px) {
-  #soundCloud { padding-top: 0px;}
-  #wanna { margin-bottom: -40px;}
-  #bounce { margin-bottom: -40px;}
-  .iframe { width: 250px;}
-  #fb-link { padding-top: 60px;margin-right: 50px;}
+  .homeBanner { font-size: 4em;}
+
+  .bio-wrap {margin-bottom: -555px;}
+  /*music page*/
+  .iframe { width: 250px; }
+  .youTubeTitle {margin-top: 40px; }
+  #banner { height: auto;}
+
+  #runner h1 { font-size: 1em;padding-top: 10px;}
+
+
+
+  #soundCloud { padding-top: 5px; }
+  #youTube { margin-top: 60px; }
+  #wanna { margin-bottom: -40px; }
+  #bounce { margin-bottom: -40px; }
+  #buyLinks { margin-top: -40px; }
+  #itunes, #amazon , #cdbaby { margin:0px; margin-left: 50px; padding-top: 20px; }
+
+  /*websites page*/
+  #webBan { padding-top: 10px;padding-bottom: 10px; }
+
 }
 
 
@@ -152,7 +271,6 @@ hr {
   #nav p     { display: none; }
   #nav select { display: inline-block; }
 }
-
 
 
 /*when mobile lower top margin*/
@@ -208,7 +326,8 @@ hr {
 
 }
 
-/**/
+
+/* Photo Carousel*/
 div#carousel {
   perspective: 1200px;
   background: #100000;
@@ -251,11 +370,3 @@ div#carousel ~ span {
   border-bottom: none;
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
-
-
-
-/*
-
-                NEW VERSION
-
-*/
