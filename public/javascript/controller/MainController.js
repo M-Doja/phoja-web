@@ -19,13 +19,7 @@
 		});
 
 
-		vm.craft = function() {
-			document.getElementById("#craft").addClass('active').then(function() {
-				$state.go('Craft');
-
-			})
-		}
-
+	
 
 
 }
