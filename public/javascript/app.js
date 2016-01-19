@@ -1,4 +1,4 @@
-angular.module('Phoja', ['ui.router', 'ngAnimate']).config(function($stateProvider, $urlRouterProvider){
+angular.module('Phoja', ['ui.router']).config(function($stateProvider, $urlRouterProvider){
   $stateProvider
   //   .state('BlogHome', {
   //   url: "/",

@@ -23,6 +23,11 @@ hr {
   text-align: center;
 
 }
+.navText {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #nav select {
   display: none;
 }
