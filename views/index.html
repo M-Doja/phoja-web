@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='Phoja'>
+<html ng-app='Phoja'style="background-color:#333;">
 <head>
 	<title>Phoja Unlimited LLC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,8 +8,8 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/animate.css-master/animate.min.css"> -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.7/slick-theme.min.css">
 
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
 	<link rel="stylesheet" type="text/css" href="/angular-material/angular-material.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
@@ -25,44 +25,45 @@
 				<p id="music"class="navText"><a ui-sref='Music'> Music Production</a></p>
         <p id="web"class="navText"><a ui-sref='Websites'>Web-Dev</a></p>
       </div>
-		</div>
 
-			<div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak>
+
+			<div class="fixed"id='sideNav' ng-controller="AppCtrl" layout="column" ng-cloak>
 			    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
-			    
+
 			    </md-sidenav>
-			    <md-content flex layout-padding>
+			    <!-- <md-content flex layout-padding> -->
 			      <div layout="column" layout-fill layout-align="top center">
 			        <div>
-			          <md-button ng-click="toggleRight()"
+			          <md-button id='sideNavBtn' ng-click="toggleRight()"
 			            ng-hide="isOpenRight()"
 			            class="md-primary">
-			            Toggle right
+			            Menu
 			          </md-button>
 			        </div>
 			      </div>
 			      <div flex></div>
-			    </md-content>
-			    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+			    <!-- </md-content> -->
+			    <md-sidenav style="z-index:99999"class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
 			      <md-toolbar class="md-theme-light">
-			        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+			        <h1 style="background-color: rgba(255,25,25,0.7);font-family:Lobster"class="md-toolbar-tools">Phoja Unlimited LLC</h1>
 			      </md-toolbar>
 			      <md-content ng-controller="RightCtrl" layout-padding>
-			        <form>
-			          <md-input-container>
-			            <label for="testInput">Test input</label>
-			            <input type="text" id="testInput"
-			                   ng-model="data" md-autofocus>
-			          </md-input-container>
-			        </form>
 			        <md-button ng-click="close()" class="md-primary">
-			          Close Sidenav Right
+			          &#x274c; Close
 			        </md-button>
+							<div class="col-md-12 nav-hold" style="margin:0 auto;">
+				        <md-button ui-sref='Landing' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Home</md-button><br>
+				        <md-button ui-sref='Advisory' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Advisory</md-button><br>
+								<md-button ui-sref='Craft' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Custom Craft</md-button><br>
+								<md-button ui-sref='Music' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Music Production</md-button><br>
+				        <md-button ui-sref='Websites' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Web-Dev</md-button>
+				      </div>
+
 			      </md-content>
 			    </md-sidenav>
 
 			</div>
-
+</div>
 
 
 

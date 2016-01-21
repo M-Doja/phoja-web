@@ -1,6 +1,5 @@
 angular.module('Phoja')
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-    $scope.toggleLeft = buildDelayedToggler('left');
     $scope.toggleRight = buildToggler('right');
     $scope.isOpenRight = function(){
       return $mdSidenav('right').isOpen();
@@ -25,15 +24,7 @@ angular.module('Phoja')
      * Build handler to open/close a SideNav; when animation finishes
      * report completion in console
      */
-    function buildDelayedToggler(navID) {
-      return debounce(function() {
-        $mdSidenav(navID)
-          .toggle()
-          .then(function () {
-            $log.debug("toggle " + navID + " is done");
-          });
-      }, 200);
-    }
+
     function buildToggler(navID) {
       return function() {
         $mdSidenav(navID)
@@ -44,15 +35,13 @@ angular.module('Phoja')
       }
     }
   })
-  .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function () {
-      $mdSidenav('left').close()
-        .then(function () {
-          $log.debug("close LEFT is done");
-        });
-    };
-  })
-  .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+
+  .controller('RightCtrl', function ($state, $scope, $timeout, $mdSidenav, $log) {
+    $scope.home = function () {
+      $state.go().then(function() {
+        $scope.close();
+      });
+    }
     $scope.close = function () {
       $mdSidenav('right').close()
         .then(function () {
