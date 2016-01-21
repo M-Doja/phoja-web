@@ -37,11 +37,7 @@ angular.module('Phoja')
   })
 
   .controller('RightCtrl', function ($state, $scope, $timeout, $mdSidenav, $log) {
-    $scope.home = function () {
-      $state.go().then(function() {
-        $scope.close();
-      });
-    }
+    $scope.sideNavBtn = false;
     $scope.close = function () {
       $mdSidenav('right').close()
         .then(function () {

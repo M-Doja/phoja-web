@@ -8,33 +8,35 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/animate.css-master/animate.min.css"> -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.7/slick-theme.min.css">
 
-	<link rel="stylesheet" type="text/css" href="/angular-material/angular-material.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.css">	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
+	<style media="screen">
+		button #sideNavBtn {display: none;}
+	</style>
 </head>
 <body id="container" style="font-family:serif;">
 
 
     <div class="row" id='nav' style="margin-bottom:px;">
-			<div class="col-md-12 nav-hold">
+			<!-- <div class="col-md-12 nav-hold">
         <p id="home"class="navText"><a ui-sref='Landing'>Home</a></p>
         <p id="advise"class="navText"><a ui-sref='Advisory'> Advisory</a></p>
 				<p id="craft"class="navText"><a ui-sref='Craft'> Custom Craft</a></p>
 				<p id="music"class="navText"><a ui-sref='Music'> Music Production</a></p>
         <p id="web"class="navText"><a ui-sref='Websites'>Web-Dev</a></p>
-      </div>
+      </div> -->
 
 
-			<div class="fixed"id='sideNav' ng-controller="AppCtrl" layout="column" ng-cloak>
+			<div id='sideNav' ng-controller="AppCtrl" layout="column" >
 			    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
 
 			    </md-sidenav>
 			    <!-- <md-content flex layout-padding> -->
 			      <div layout="column" layout-fill layout-align="top center">
 			        <div>
-			          <md-button id='sideNavBtn' ng-click="toggleRight()"
+			          <md-button ng-click="toggleRight()"
 			            ng-hide="isOpenRight()"
 			            class="md-primary">
 			            Menu
@@ -43,7 +45,7 @@
 			      </div>
 			      <div flex></div>
 			    <!-- </md-content> -->
-			    <md-sidenav style="z-index:99999"class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+			    <md-sidenav style="z-index:99999;"class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
 			      <md-toolbar class="md-theme-light">
 			        <h1 style="background-color: rgba(255,25,25,0.7);font-family:Lobster"class="md-toolbar-tools">Phoja Unlimited LLC</h1>
 			      </md-toolbar>
@@ -51,13 +53,13 @@
 			        <md-button ng-click="close()" class="md-primary">
 			          &#x274c; Close
 			        </md-button>
-							<div class="col-md-12 nav-hold" style="margin:0 auto;">
+							<!-- <div class="col-md-12 nav-hold" style="width:100px;"> -->
 				        <md-button ui-sref='Landing' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Home</md-button><br>
 				        <md-button ui-sref='Advisory' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Advisory</md-button><br>
 								<md-button ui-sref='Craft' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Custom Craft</md-button><br>
 								<md-button ui-sref='Music' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Music Production</md-button><br>
 				        <md-button ui-sref='Websites' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Web-Dev</md-button>
-				      </div>
+				      <!-- </div> -->
 
 			      </md-content>
 			    </md-sidenav>
@@ -80,10 +82,14 @@
 	<!-- <script src="/angular/angular.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular.min.js"></script>
 
-	<script src="/angular-material/angular-material.min.js"></script>
+	<!-- <script src="/angular-material/angular-material.min.js"></script>
 	<script src="/angular-aria/angular-aria.min.js"></script>
 	<script src="/angular-animate/angular-animate.min.js"></script>
-	<script src="/angular-material/angular-material.min.js"></script>
+	<script src="/angular-material/angular-material.min.js"></script> -->
+	<!-- Material -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-aria.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-animate.min.js"></script>
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.js" charset="utf-8"></script>
 

@@ -205,9 +205,11 @@ hr {
 @media (max-width: 200px) {
   /*#soundCloud { margin-bottom: 1500px;}*/
   .bio-wrap {margin-bottom: -555px;}
-    #sideNavBtn { display: none;}
 }
+@media (max-width: 200px) {
+  /*#sideNav  { display: none;}*/
 
+}
 
 
 /*LARGER TABLET VIEW WIDTHS*/
@@ -252,12 +254,13 @@ hr {
   #webBan { padding-top: 10px;padding-bottom: 10px; }
 }
 @media (min-width: 1000px) {
-  #sideNavBtn { display: inherit; }
+  /* { display: inherit; }*/
 }
+
 
 @media (max-width: 1000px) {
   #nav p     { display: none; }
-  #sideNav { display: inherit; }
+  /*#sideNav { display: inherit; }*/
 }
 
 #fb-link {
