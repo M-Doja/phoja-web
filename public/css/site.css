@@ -10,6 +10,7 @@ hr {
   height:1px;
   max-width:970px;
 }
+
 #nav li {
   text-align: center;
   float: center;
@@ -273,7 +274,7 @@ hr {
 
 
 @media (max-width: 1000px) {
-  #nav p     { display: none; }
+  /*#nav p     { display: none; }*/
   #nav select { display: inline-block; }
 }
 
