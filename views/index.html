@@ -12,14 +12,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
-	<style media="screen">
-		button #sideNavBtn {display: none;}
-	</style>
+
 </head>
 <body  style="font-family:serif;">
 
 <div id="container">
-
 
     <div class="row" id='nav' style="margin-bottom:px;">
 			<div class="col-md-12 nav-hold">
@@ -29,8 +26,19 @@
 				<p id="music"class="navText"><a ui-sref='Music'> Music Production</a></p>
         <p id="web"class="navText"><a ui-sref='Websites'>Web-Dev</a></p>
       </div>
-</div>
+		</div>
+		<div id="mySidenav" class="sidenav" ng-controller='MainController as vm'>
+			<a href="javascript:void(0)" class="closebtn" ng-click="vm.closeNav()">×</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+		<!-- Use any element to open/show the overlay navigation menu -->
+		<span style="font-size:30px;cursor:pointer" ng-click="vm.openNav()">☰ open</span>
 
+
+<!--
 			<div id='sideNav' ng-controller="AppCtrl" layout="column" >
 			    <md-content style="background-color: #272b30">
 			      <div layout="column" layout-fill layout-align="top center">
@@ -63,13 +71,7 @@
 			      </md-content>
 			    </md-sidenav>
 
-			</div>
-
-
-
-
-
-
+			</div> -->
 </div>
 
 	<ui-view></ui-view>

@@ -17,9 +17,15 @@
 		        fxel.removeClass("fixed");
 		    }
 		});
+		
+		 vm.openNav = function() {
+				document.getElementById("mySidenav").style.width = "250px";
+		}
+		vm.closeNav = function() {
+				document.getElementById("mySidenav").style.width = "0";
+		}
 
 
-	
 
 
 }
