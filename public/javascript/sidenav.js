@@ -4,6 +4,7 @@ angular.module('Phoja')
     $scope.isOpenRight = function(){
       return $mdSidenav('right').isOpen();
     };
+    
     /**
      * Supplies a function that will continue to operate until the
      * time is up.

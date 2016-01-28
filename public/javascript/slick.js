@@ -12,14 +12,3 @@ $(selector).on('click', function(){
   $(selector).removeClass('active');
   $(this).addClass('active');
 });
-
-// $(document).ready(function(){
-//   $('.bxslider').bxSlider();
-// });
-
-// Carousel Auto-Cycle
-  // $(document).ready(function() {
-  //   $('.carousel').carousel({
-  //     interval: 6000
-  //   })
-  // });

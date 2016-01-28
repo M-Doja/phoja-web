@@ -27,18 +27,7 @@
         <p id="web"class="navText"><a ui-sref='Websites'>Web-Dev</a></p>
       </div>
 		</div>
-		<div id="mySidenav" class="sidenav" ng-controller='MainController as vm'>
-			<a href="javascript:void(0)" class="closebtn" ng-click="vm.closeNav()">×</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
-		</div>
-		<!-- Use any element to open/show the overlay navigation menu -->
-		<span style="font-size:30px;cursor:pointer" ng-click="vm.openNav()">☰ open</span>
-
-
-<!--
+		
 			<div id='sideNav' ng-controller="AppCtrl" layout="column" >
 			    <md-content style="background-color: #272b30">
 			      <div layout="column" layout-fill layout-align="top center">
@@ -46,7 +35,7 @@
 			          <md-button style="color: rgba(255,25,25,0.7);font-family:Bree serif;font-size:2em;margin-top:20px;"ng-click="toggleRight()"
 			            ng-hide="isOpenRight()"
 			            class="md-default">
-			            Menu
+			            ☰ Menu
 			          </md-button>
 			        </div>
 			      </div>
@@ -61,17 +50,17 @@
 			          &#x274c; Close
 			        </md-button>
 							<div class="col-md-12 nav-hold" style="">
-				        <md-button ui-sref='Landing' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Home</md-button><br>
-				        <md-button ui-sref='Advisory' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Advisory</md-button><br>
-								<md-button ui-sref='Craft' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Custom Craft</md-button><br>
-								<md-button ui-sref='Music' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Music Production</md-button><br>
-				        <md-button ui-sref='Websites' style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Web-Dev</md-button>
+				        <md-button ui-sref='Landing'ng-click="close()" style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Home</md-button><br>
+				        <md-button ui-sref='Advisory' ng-click="close()" style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Advisory</md-button><br>
+								<md-button ui-sref='Craft' ng-click="close()" style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Custom Craft</md-button><br>
+								<md-button ui-sref='Music' ng-click="close()" style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;"> Music Production</md-button><br>
+				        <md-button ui-sref='Websites' ng-click="close()" style="color:black;width:100%;font-family:Bree serif;font-size:1.5em;">Web-Dev</md-button>
 				      </div>
 
 			      </md-content>
 			    </md-sidenav>
 
-			</div> -->
+			</div>
 </div>
 
 	<ui-view></ui-view>

@@ -12,7 +12,7 @@ hr {
 }
 .sidenav {
   height: 100%;
-  width: 0;
+  max-width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -34,6 +34,10 @@ hr {
 
 .sidenav a:hover, .offcanvas a:focus{
   color: #f1f1f1;
+}
+md-sidenav {
+  max-width: 250px;
+  min-width: 250px;
 }
 
 .closebtn {
